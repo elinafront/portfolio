@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+  <title>ElinaK | Portfolio | Frontend</title>
+
+  <style type="text/css">
+  
+  /*Nollataan pohjassa olevat asetukset*/
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+
+    body {
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.7em;
+      background-color:  #ebfafa;
+    
+    }
+
+    #taustakuva {
+      background: #bbbdbf; /*Lisätty taustaväri siinä tapauksessa, että kuva ei jostain syystä aukea*/
+      background: url('../img/laptop.jpg') no-repeat
+      center center/cover;
+    }
+    /*headerin stylen muokkaus*/
+    .aloitus { 
+      margin: auto;
+      max-width: 100%;
+      overflow: auto;
+      padding: 200px 0px;
+      text-align: center;
+    }
+    /*Lisätään teksteihin välit*/
+    p {
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+
+    .kuva {
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
+
+    .video  {
+      margin-bottom: 15px;
+    }
+
+    .lista {
+      margin-top: 20px;
+    }
+
+    .linkit {
+      text-decoration: none;
+      color: #008fb3;
+    }
+
+    /*Haastavaa oli saada kaksi keskimmäistä lohkoa saman kokoisiksi... 
+    F12 avulla näin alueiden koot ja sitten muokkasin tänne lähinnä kokeilemalla eri vaihtoehtoja. 
+    Varmasti parempikin tapa olemassa? */
+    #keskilohko .vasen { 
+      margin-top: 20px;
+      float:left;
+      width: 20%;
+      min-height: 100%;
+      height:1270px;
+      padding: 10px;
+      }
+
+    #keskilohko .oikea {
+      margin-top: 20px;
+      float: right;
+      width: 70%;
+      height: 100%;
+      overflow: hidden;
+      padding: 30px;
+    }
+
+    .lihavoitu {
+      font-weight: bold;
+    }
+
+    .kursivoitu {
+      font-style: italic;
+    }
+/*
+    button {
+      cursor:pointer;
+      background-color: #6ecae0;
+      border: none;
+      border-radius: 10%;
+    }
+    button:hover {
+      background-color:	 #84d1d1;
+    }
+
+    input, textarea {
+      background: #f2f2f2 ; 
+      border-radius: 10%;
+      padding-top: 10px;
+      margin-top: 20px;
+      border: none;
+    }
+    */
+    /*poistaa edelliset muotoilut*/
+    .clr {
+      clear: both;
+    }
+    
+   footer {
+      background-color:#d6f5f5;
+      margin: auto;
+      max-width: 100%;
+      padding: 20px;
+      height: 200px;
+    }
+   
+   
+  </style>
+</head>
+<body>
+
+  <header>
+    <div id="taustakuva">
+      <div class="aloitus">
+        <h1>Elina Kaperi</h1>
+        <p>Tuleva Front-End Developer</p>
+      </div>
+    </div>  
+  </header>
+
+  <section id="keskilohko">
+    <div class="vasen">
+      
+      <a href="#Yhteystiedot" class="linkit">Työt ja opintoni</a><br>
+      <a href="https://www.taitotalo.fi" target="_blank" class="linkit">Taitotalo</a><br>
+      <a href="taulukko.html" target="_blank" class="linkit">Taulukkoharjoitus</a>
+      <a href="lomake.html" target="_blank" class="linkit">Yhteydenottolomake</a>
+    </div>
+
+    <div class="oikea">
+      <h1>HTML-kielen perusteet</h1>
+      <a name="HTML-kielen perusteet"></a>
+        <p>HTML (lyhenne sanoista Hypertext Markup Language, suomennettuna hypertekstin merkintäkieli) on avoimesti 
+          standardoitu kuvauskieli, jolla voidaan kuvata hyperlinkkejä sisältävää tekstiä eli hypertekstiä. HTML:llä 
+          voidaan myös merkitä tekstin rakenne eli esimerkiksi, mikä osa tekstistä on otsikkoa ja mikä leipätekstiä. 
+          HTML tunnetaan erityisesti kielenä, jolla internetsivut on kirjoitettu.(Wikipedia)</p>
+
+      <h2>Perusrakenne</h2>
+        <p>HTML-koodi on rakenteista tekstiä, joka muodostuu sisäkkäisistä ja perättäisistä elementeistä. Koodauksen 
+          tasolla elementtejä edustavat kulmasulkein merkityt tunnisteet eli tägit, jotka nimeävät elementin tyypin. 
+          Selaimet eivät näytä tunnisteita sellaisinaan vaan käsittelevät niitä teknisinä ohjeina, joiden mukaan sivun 
+          varsinainen sisältö tulee jäsentää.
+          <br>
+          <br>
+          Tavallisesti elementissä on erikseen aloitustunniste ja vinoviivalla merkitty lopetustunniste sekä niiden 
+          väliin jäävä sisältö (jossa voi olla tekstiä ja myös muita HTML-elementtejä).(Wikipedia)</p>
+
+      <h2>Tekstin muotoilu</h2>
+        <p>HTML kielestä löytyy elementtejä tekstin muotoiluun. Muotoiluelementeillä teksti saadaan näkymään 
+          esim. <span class="lihavoitu">lihavoituna</span> tai <span class="kursivoitu">kursivoituna</span> .
+        </p>
+      <h2>Kuvien ja videon käyttäminen</h2>
+
+          <div class="kuva">
+            <img src="/img/mobile.jpg"  alt="mobilephone" style="height: 150px; width: 200px; border-radius: 50%;">
+          </div>
+
+          <div class="video">
+            <video width="320" height="240" controls>
+            <source src="/img/video.mp4" type="video/mp4">
+            </video>
+          </div>
+
+      <h2>Listat ja taulukot</h2>     
+          <ol class="lista">
+            <li>Asiaa</li>
+            <li>Enemmän asiaa</li>
+            <li>Vähän lisää</li>
+            <li>Loppu</li>
+          </ol>
+      </div>
+  </section>
+
+  <div class="clr"></div>
+
+  <footer>
+      <a name="Yhteystiedot"></a>   
+    <div>
+      <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" 
+      data-theme="dark" data-vanity="elina-kaperi-01372a1a9"><a class="LI-simple-link"
+      href='https://fi.linkedin.com/in/elina-kaperi-01372a1a9?trk=profile-badge'>LinkedIn</a>
+     </div>
+    </div> 
+  </footer>
+</body>
+
+</html>
