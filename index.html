@@ -85,24 +85,35 @@
     .kursivoitu {
       font-style: italic;
     }
-/*
+    
+        /*Yhteydenottolomake*/
+    .lomake {
+      margin-top: 150px;
+      background: #d6f5f5;
+      text-align: center;
+    }
+
+    .input-laatikko {
+        width: 80%;
+        padding: 5px;
+        border: #ddd 1px solid;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
     button {
       cursor:pointer;
       background-color: #6ecae0;
       border: none;
-      border-radius: 10%;
+      padding: 5px;
+      width: 80%;
+      margin-top: 10px;
+      margin-bottom: 10px;
     }
     button:hover {
       background-color:	 #84d1d1;
     }
-    input, textarea {
-      background: #f2f2f2 ; 
-      border-radius: 10%;
-      padding-top: 10px;
-      margin-top: 20px;
-      border: none;
-    }
-    */
+    
     /*poistaa edelliset muotoilut*/
     .clr {
       clear: both;
@@ -132,13 +143,53 @@
 
   <section id="keskilohko">
     <div class="vasen">
+      <!-- Linkit sivun vasemmassa reunassa-->
+      <div>
+        <a href="#Yhteystiedot" class="linkit">Työt ja opintoni</a><br>
+        <a href="https://www.taitotalo.fi" target="_blank" class="linkit">Taitotalo</a><br>
+        <a href="#taulukko" class="linkit">Taulukkoharjoitus</a>
+       </div>
       
-      <a href="#Yhteystiedot" class="linkit">Työt ja opintoni</a><br>
-      <a href="https://www.taitotalo.fi" target="_blank" class="linkit">Taitotalo</a><br>
-      <a href="#taulukko" class="linkit">Taulukkoharjoitus</a>
-      <a href="lomake.html" target="_blank" class="linkit">Yhteydenottolomake</a>
+    <!-- Yhteydenotto lomake -->
+      <div class="lomake">
+        <h4>Yhteydenottolomake</h4>
+        <form action="">
+          <div >
+            <label for="name">Nimi</label><br>
+            <input type="text" name="name" class="input-laatikko">
+          </div>
+          <div>
+            <label for="email">Sähköposti</label><br>
+            <input type="email" name="email" class="input-laatikko">
+          </div>
+          <div>
+            <label for="today">Päivämäärä</label><br>
+            <input type="date" name="today" class="input-laatikko">
+          </div>
+          <div>
+            <label for="valinta"></label>Haluatko:<br>
+            <input type="checkbox" name="valinta" value="Jutella muuten vain">Jutella muuten vain <br>
+            <input type="checkbox" name="valinta" value="Kuulla enemmän opinnoistani" checked>Kuulla enemmän opinnoistani <br>
+            <input type="checkbox" name="valinta" value="Keskustella harjoittelupaikasta">Keskustella harjoittelupaikasta <br>
+          </div>
+          <div>
+            <label for="valinta2"></label>Oletko: <br>
+            <input type="radio" name="valinta2" value="Yrityksen edustaja">Yrityksen edustaja <br>
+            <input type="radio" name="valinta2" value="Oppilaitoksen edustaja">Oppilaitoksen edustaja<br>
+            <input type="radio" name="valinta2" value="Yksityishenkilö" checked>Yksityishenkilö<br>
+          </div>
+    
+          <div>
+            <button type="reset">Tyhjennä</button>
+          </div>
+          <div>
+            <button type="submit">Lähetä</button>
+          </div>  
+        </form>
+      </div>
     </div>
-
+    
+     <!-- Varsinainen sivun sisältö-->    
     <div class="oikea">
       <h1>HTML-kielen perusteet</h1>
       <a name="HTML-kielen perusteet"></a>
