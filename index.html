@@ -19,15 +19,15 @@
       font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.7em;
       background-color:  #ebfafa;
-    
     }
-
+    
+  /*Header*/
     #taustakuva {
       background: #bbbdbf; 
       background: url('https://github.com/elinafront/portfolio/blob/master/img/laptop.jpg?raw=true') no-repeat
       center center/cover;
     }
-    /*headerin stylen muokkaus*/
+    
     .aloitus { 
       margin: auto;
       max-width: 100%;
@@ -35,10 +35,18 @@
       padding: 200px 0px;
       text-align: center;
     }
-  
+  /*Pääsisältö*/
     p {
       margin-bottom: 20px;
       margin-top: 20px;
+    }
+    
+    .lihavoitu {
+      font-weight: bold;
+    }
+
+    .kursivoitu {
+      font-style: italic;
     }
 
     .kuva {
@@ -59,7 +67,7 @@
      .taulukko {
        margin-top: 20px;
     }
-    
+    /*Määritetään vasen ja oikea lohko*/
     #keskilohko .vasen { 
       margin-top: 20px;
       float:left;
@@ -77,16 +85,8 @@
       overflow: hidden;
       padding: 30px;
     }
-
-    .lihavoitu {
-      font-weight: bold;
-    }
-
-    .kursivoitu {
-      font-style: italic;
-    }
     
-        /*Yhteydenottolomake*/
+     /*Yhteydenottolomake*/
     .lomake {
       margin-top: 150px;
       background: #d6f5f5;
@@ -114,7 +114,7 @@
       background-color:	 #84d1d1;
     }
     
-    /*poistaa edelliset muotoilut*/
+    /*poistaa edelliset muotoilut ennen footerin stailausta*/
     .clr {
       clear: both;
     }
@@ -140,7 +140,7 @@
       </div>
     </div>  
   </header>
-
+<!--Keskilohko vasen-->
   <section id="keskilohko">
     <div class="vasen">
       <!-- Linkit sivun vasemmassa reunassa-->
@@ -153,6 +153,7 @@
     <!-- Yhteydenotto lomake -->
       <div class="lomake">
         <h4>Yhteydenottolomake</h4>
+        <h5>Under construction</5>
         <form action="">
           <div >
             <label for="name">Nimi</label><br>
@@ -178,7 +179,7 @@
             <input type="radio" name="valinta2" value="Oppilaitoksen edustaja">Oppilaitoksen edustaja<br>
             <input type="radio" name="valinta2" value="Yksityishenkilö" checked>Yksityishenkilö<br>
           </div>
-    
+    <!-- lomakkeen tyhjennys ja lähetä painikkeet-->
           <div>
             <button type="reset">Tyhjennä</button>
           </div>
@@ -218,6 +219,7 @@
             <img src="https://github.com/elinafront/portfolio/blob/master/img/mobile.jpg?raw=true"  alt="mobilephone" style="height: 150px; width: 200px; border-radius: 50%;">
           </div>
 
+      <!--Listaksi valittu vain järjestetty lista--> 
       <h2>Listat ja taulukot</h2>     
           <ol class="lista">
             <li>Asiaa</li>
@@ -225,6 +227,8 @@
             <li>Vähän lisää</li>
             <li>Loppu</li>
           </ol>
+     
+      <!--Liitetty opintoihin tehty taulukkoharjoitus-->
       <div class="taulukko">
          <a name="taulukko"></a>
         <h4>Taulukkoharjoitus</h4>
@@ -260,7 +264,7 @@
   </section>
 
   <div class="clr"></div>
-
+<!-- Footerin lisätään linkki LinkedIn sivulle. Muuten yhteydenottopyynnöt lomakkella-->
   <footer>
       <a name="Yhteystiedot"></a>   
     <div>
